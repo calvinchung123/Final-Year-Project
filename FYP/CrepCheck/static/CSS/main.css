@@ -1,0 +1,26 @@
+h1, h2, h3, h4, h5, form, button, div{
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+
+p {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}

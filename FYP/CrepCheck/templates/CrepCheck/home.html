@@ -1,0 +1,352 @@
+{% extends "CrepCheck/navbar.html" %}
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Home</title>
+  </head>
+<body style="font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; ">
+<!--<div style="background-image: url({% static 'img/wewcopy.jpg' %}); height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover;">-->
+{% block navbar %}
+<div class="container-fluid fill">
+
+  <div class="row" style="background-image: url({% static 'img/wew2.jpg' %}); background-position: center; background-repeat: no-repeat; background-size: cover;" >
+    <div class="col">
+    <!--Left Column-->
+    </div>
+
+    <div class="col text-center">
+                <!--<div class="col-8" style="background-image: url({% static 'img/wew.jpg' %}); background-size: 100% 100%;">-->
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <a href="{%url 'CrepCheck:home'%}"> <img src ="{% static "img/logo.png" %}" alt ="{% static "img/ele.jpg" %}" style="width: 250px; height:150px;" class=" text-center" ></a>
+              <h1 class="text-white F"> CREPCHECK </h1>
+              <h3 class="text-white"> The art of shoe grading at </h3>
+              <h3 class="text-white"> the click of a button </h3>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              
+                 <!--<img src ="{% static "img/wew.jpg" %}" alt ="{% static "img/ele.jpg" %}"  style="width: 950px; height:350px; padding" class="w-100" >-->
+    </div>
+       
+    <div class="col">
+    <!--Right Column-->
+    </div>
+
+  </div> <!--Row-->
+  <div class="row bg-dark text-white"  >
+    <div class="col-sm">
+      <!--One of three columns-->
+    </div>
+    <div class="col-sm">
+    <br>
+    <br>
+      <h4 class="text-center">Step 1 </h4> 
+            <br>
+      <a href="{%url 'CrepCheck:guide'%}"> <img src ="{% static "img/camera1.png" %}" alt ="{% static "img/ele.jpg" %}" style="width: 100px; height:100px;" class="rounded mx-auto d-block" ></a>
+                  <br>
+      <h5 class="text-center">Image Capture Guide </h5>
+      <br>
+      <br>
+    </div>
+    <div class="col-sm">
+    <br>
+    <br>
+      <h4 class="text-center">Step 2 </h4>
+            <br>
+      <a href="{%url 'CrepCheck:upload_image'%}"> <img src ="{% static "img/upload.png" %}" alt ="{% static "img/ele.jpg" %}" style="width: 100px; height:100px;" class="rounded mx-auto d-block" ></a>
+                  <br>
+      <h5 class="text-center">Upload Picture </h5>
+      <br>
+      <br>
+    </div>
+    <div class="col-sm">
+    <br>
+    <br>
+      <h4 class="text-center">Step 3 </h4> 
+            <br>
+      <a href="{%url 'CrepCheck:dirt'%}"><img src ="{% static "img/idea.png" %}" alt ="{% static "img/ele.jpg" %}" style="width: 100px; height:100px;" class="rounded mx-auto d-block" ></a>
+                  <br>
+      <h5 class="text-center">Understand Your Grade </h5>
+      <br>
+      <br>
+    </div>
+    <div class="col-sm">
+      <!--One of three columns-->
+    </div>
+   </div> <!--End Step Row-->
+   <div class="row bg-white text-black" >
+    <div class="col-sm">
+      <!--One of three columns-->
+    </div>
+    <div class="col-sm">
+      <!--One of three columns-->
+      <br>
+      <br>
+      <br>
+      <h1 class="text-center"> WHAT WE DO</h1>
+      <h1 class="text-center">—</h1>
+      <h5 class="text-center">Our Algorithms will pinpoint the imperfections.</h5>
+      <br>
+      <br>
+    </div>
+    <div class="col-sm">
+      <!--One of three columns-->
+    </div>
+   </div> <!--End Our work row-->
+
+   <div class="row bg-white text-black ">
+    <div class="col">
+      <!--One of three columns-->
+    </div>
+
+    <div class="col">
+          <div class="card" style="width: 18rem;">
+      <img src ="{% static "img/frontcrop.png" %}" alt ="{% static "img/ele.jpg" %}" style="width: 280px; height:300px;" class="card-img-top rounded mx-auto d-block" >
+      <div class="card-body">
+        <h5 class="card-title text-center">Background remvoal</h5>
+        <p class="card-text"></p>
+      </div>
+    </div>
+    <br>
+    <br>
+    </div>
+
+    <div class="col">
+      <!--One of three columns-->
+      <div class="card" style="width: 18rem;">
+      <img src ="{% static "img/dirt4.png" %}" alt ="{% static "img/ele.jpg" %}" style="width: 280px; height:300px;" class="card-img-top rounded mx-auto d-block" >
+      <div class="card-body">
+        <h5 class="card-title text-center">Dirt Detection</h5>
+        <p class="card-text"></p>
+      </div>
+    </div>
+    <br>
+    <br>
+    </div>
+    
+    <div class="col">
+      <!--One of three columns-->
+      <div class="card" style="width: 18rem;">
+      <img src ="{% static "img/Crap.png" %}" alt ="{% static "img/ele.jpg" %}" style="width: 280px; height:300px;" class="card-img-top rounded mx-auto d-block" >
+      <div class="card-body">
+        <h5 class="card-title text-center">Crease Dectection</h5>
+        <p class="card-text"></p>
+      </div>
+    </div>
+    <br>
+    <br>
+    </div>
+
+    <div class="col">
+      <!--One of three columns-->
+    </div>
+   </div><!--end algorithms row-->
+
+   <div class= "row">
+   <div class="col bg-dark text-white">
+      <!--One of three columns-->
+    </div>
+    <div class="col bg-dark text-white">
+      <br>
+      <br>
+      <br>
+      <h1 class="text-center"> BUT FIRST...</h1>
+      <h1 class="text-center">—</h1>
+      <h5 class="text-center">In order for our algorithms to achieve perfection, check out the <b><a href="{%url 'CrepCheck:guide'%}" style="text-decoration: underline">Guide</a></b> page for more info</h5>
+      <br>
+      <br>
+    </div>
+    <div class="col bg-dark text-white">
+      <!--One of three columns-->
+    </div>
+   </div> <!--End GUIDE Row-->
+   
+   <div class="row">
+    <div class="col-4">
+    <br>
+      <!--One of three columns-->
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1 class="text-center"> ALMOST THERE!</h1>
+      <h1 class="text-center">—</h1>
+      <h5 class="text-center">Now that you understand the process, upload the image and get your perfect evaluation.</h5>
+      <br>
+      <div class="text-center">
+        <a href="{%url 'CrepCheck:upload_image'%}" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Upload</a>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+    <div class="col-8" style="background-image: url({% static 'img/up.jpg' %}); background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <br>
+      <!--One of three columns-->
+    </div>
+
+   </div><!--end upload row-->
+   <div class="row bg-dark text-white">
+   <div class ="col">
+   </div>
+
+    <div class ="col">
+      <br>
+      <br>
+      <br>
+      <h1 class="text-center"> AND NOW...</h1>
+      <h1 class="text-center">—</h1>
+      <h5 class="text-center">Compare your results to the <b><a href="{%url 'CrepCheck:guide'%}" style="text-decoration: underline">Grading</a></b> rubics below to see how you got your grade</h5>
+      <br>
+      <br>
+    </div>
+
+  <div class ="col">
+   </div>
+
+   </div><!--end row-->
+
+  </div> <!--Container-->
+     <div class="row bg-dark">
+        <div class="col-1">
+            <br>
+            <br>
+        </div>
+        <div class="col">
+        <br>
+            <table class="table table-bordered bg-white">
+                <thead class="thead-light">
+                    <tr>
+                    <th scope="col"></th>
+                    <th scope="col" class="text-center">DIRT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row">-1</th>
+                    <td>Good Rule of thumb is -1 for every 2 signs of dirt</td>
+                    </tr>
+                    <tr>
+                    <th scope="row"></th>
+                    <td>Maximum 3 can be deducted from a pair of shoes for dirt</td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <table class="table table-bordered bg-white">
+                <thead class="thead-light">
+                    <tr>
+                    <th scope="col"></th>
+                    <th scope="col" class="text-center">CREASES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row">-1</th>
+                    <td>If there are a crease at the front of the shoe automatically -1</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">-.5+</th>
+                    <td>For every additional crease (creases in the same branch/area) -0.5</td>
+                    </tr>
+                    <tr>
+                    <th scope="row"></th>
+                    <td>Maximum 3 can be deducted from a pair of shoes for creases</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <div class="col" >
+            <br>
+            <table class="table table-bordered bg-white">
+                <thead class="thead-light">
+                    <tr>
+                    <th scope="col">GRADING</th>
+                    <th scope="col" class="text-center">DESCRIPTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row">10</th>
+                    <td>Perfect, mint condition. No signs of creases or dirt </td>
+                    </tr>
+                    <tr>
+                    <th scope="row">9</th>
+                    <td>Near mint signs of dirt or small creases</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">8</th>
+                    <td>Minor imperfections. Some scratching or creases</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">7</th>
+                    <td>Visible imperfections. Signs of creases, maybe signs of dirt</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">6</th>
+                    <td>Used. Multiple creases and signs of dirt</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">5</th>
+                    <td>Flawed. Multiple cases of the defects noted above </td>
+                    </tr>
+                    <tr>
+                    <th scope="row"></th>
+                    <td>This shoe grading rubric is a deduction-based rubric. A shoe will start at 10 (Perfect) and end at 5(flawed). Following the 2 defect rubrics you can grade a shoe with a combination of the defects present on a shoe.</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        <div class="col-1">
+            <br>
+            <br>
+        </div>
+    </div><!--end head row-->
+   <div class="row">
+   <div class ="col">
+    <br>
+   </div>
+   <div class ="col">
+   </div>
+
+   </div><!--end row-->
+
+  </div> <!--Container-->
+</div>
+{% endblock %}
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

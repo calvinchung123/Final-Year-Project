@@ -1,0 +1,144 @@
+{% extends "CrepCheck/navbar.html" %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/upload.css' %}">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Upload</title>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+<body>
+{% block navbar %}
+        
+<div class="container-fluid ">
+
+        <div class="row" style="background-image: url({% static 'img/yoy.jpg' %}); background-position: center; background-repeat: no-repeat; background-size: cover;" >
+            <div class="col">
+            <!--Left Column-->
+            </div>
+
+            <div class="col text-center text-white">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h1 ></h1>
+                    <h3 >  </h3>
+                    <h3 >  </h3>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+            </div><!--end col -->
+            <div class="col">
+            <!--Left Column-->
+            </div>
+        </div><!--end row -->
+
+        <div class="row bg-dark text-white">
+            <div class="col text-center">
+            <!--
+                 <form method = "post" enctype="multipart/form-data" > 
+                 {% csrf_token %} 
+                 <input type ="file" name="document">
+                 <button type="submit" >Upload</button>
+                 </form>
+            -->
+            </div>
+
+            <div class="col text-center">
+            
+                <br>
+                <h1> UPLOAD</h1>
+                <h1>—</h1>
+                <h5 >Simply upload your picture and we'll do the magic for you.</h5>
+                <br>
+                <form method = "post" enctype="multipart/form-data" > 
+                        {% csrf_token %} 
+                        {{form}}
+                    <br>
+                    <button type="submit" >Upload</button>
+                    <br>
+                    <br>
+                </form>
+                
+               
+            </div>
+            <div class="col text-center">
+            </div>
+        </div><!--end row-->
+        <div class="row">
+            <div class="col">
+            </div>
+
+            <div class="col">
+            <BR>
+            {%if form.is_valid%}
+                <img src ="{{image_path}}" alt ='{% static "img/ele.jpg" %}' style="width: 400px; height:550px;" class="rounded mx-auto d-block text-center" >
+            {% endif %}
+            </div>
+
+            <div class="col">
+            </div>
+        </div>
+
+        <div class="row">
+             <div class="col text-center">
+                <br>
+                <h1> OVERALL GRADE: {{ograde}}</h1>
+                <br>
+            </div>
+
+            <div class="col text-center">
+                <br>
+                <h1> DIRT GRADE: {{grade}}</h1>
+                <br>
+            </div>
+
+             <div class="col text-center">
+                <br>
+                <h1> CREASE GRADE: {{cgrade}}</h1>
+                <br>
+            </div>
+        </div>
+     <div class="row">
+    <div class="col-4 bg-dark text-white">
+    <br>
+      <!--One of three columns-->
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1 class="text-center"> GRADING</h1>
+      <h1 class="text-center">—</h1>
+      <h5 class="text-center">Now that you uploaded the picture and received your grade, see the grading page to examine your grade.</h5>
+      <br>
+      <div class="text-center">
+        <a href="{%url 'CrepCheck:dirt'%}" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Grading</a>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+    <div class="col-8" style="background-image: url({% static 'img/wood.jpg' %}); background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <br>
+      <!--One of three columns-->
+    </div>
+
+   </div><!--end upload row-->
+</div> <!--end container-->  
+      {% endblock %}
+</body>
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>

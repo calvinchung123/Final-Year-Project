@@ -1,0 +1,144 @@
+
+{% extends "CrepCheck/navbar.html" %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/upload.css' %}">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Upload</title>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+{% block navbar %}
+    <div class="container-fluid ">
+        <div class="row" style="background-image: url({% static 'img/Guide.jpg' %}); background-position: center; background-repeat: no-repeat; background-size: cover;" >
+            <div class="col">
+             <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <strong><h1 class="text-black"><strong> HELP ME HELP YOU </strong></h1>
+            </div>
+
+            <div class="col" >
+                 <!--<div class="col-8" style="background-image: url({% static 'img/wew.jpg' %}); background-size: 100% 100%;">-->
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>   
+              <br>
+            </div>
+            <div class="col">
+            </div>
+            
+        </div><!--end head row-->
+
+    <div class="row bg-white text-black" >
+    <div class="col-sm">
+      <!--One of three columns-->
+    </div>
+    <div class="col-sm">
+      <!--One of three columns-->
+      <br>
+      <br>
+      <br>
+      <h1 class="text-center"> IMAGE ACQUISITION</h1>
+      <h1 class="text-center">—</h1>
+      <h5 class="text-center">The image you give us is very important!</h5>
+      <h5 class="text-center">You dont need a fancy camera! Even your phone will do. Please follow these steps for a more accurate grade.</h5>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class="col-sm">
+      <!--One of three columns-->
+    </div>
+   </div> <!--End intro row-->
+     <div class= "row">
+   <div class="col bg-dark text-white">
+      <!--One of three columns-->
+      <br>
+      <br>
+      <br>
+      <h1 class="text-center"> LIGHTING</h1>
+      <h1 class="text-center">—</h1>
+      <h5 class="text-center">The lighting in a photo changes the quality of the algorithms, make sure you have natural lighting!</h5>
+
+      <br>
+      <br>
+      <img src ="{% static "img/light.jpg" %}" alt ="{% static "img/ele.jpg" %}" style="width: 400px; height:550px;" class="card-img-top rounded mx-auto d-block" >
+       <br>
+      <br>
+    </div>
+    <div class="col bg-dark text-white">
+      <br>
+      <br>
+      <br>
+      <h1 class="text-center"> BACKGROUND</h1>
+      <h1 class="text-center">—</h1>
+      <h5 class="text-center">Keep the background clutter free, to improve accuracy use a plain background!</h5>
+
+      <br>
+      <br>
+      <img src ="{% static "img/dan.jpeg" %}" alt ="{% static "img/ele.jpg" %}" style="width: 400px; height:550px;" class="card-img-top rounded mx-auto d-block" >
+       <br>
+      <br>
+    </div>
+    <div class="col bg-dark text-white">
+      <br>
+      <br>
+      <br>
+      <h1 class="text-center"> IMAGE DISTANCE</h1>
+      <h1 class="text-center">—</h1>
+      <h5 class="text-center">Keep the main focus of the picture on the shoes. Follow the example below.</h5>
+
+      <br>
+      <br>
+      <img src ="{% static "img/img4.jpg" %}" alt ="{% static "img/ele.jpg" %}" style="width: 400px; height:550px;" class="card-img-top rounded mx-auto d-block" >
+       <br>
+      <br>
+    </div>
+   </div> <!--End GUIDE Row-->
+    <div class="row">
+    <div class="col-4">
+    <br>
+      <!--One of three columns-->
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1 class="text-center"> ALMOST THERE!</h1>
+      <h1 class="text-center">—</h1>
+      <h5 class="text-center">Now that you understand the process, upload the image and get your perfect evaluation.</h5>
+      <br>
+      <div class="text-center">
+        <a href="{%url 'CrepCheck:upload_image'%}" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Upload</a>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+    <div class="col-8" style="background-image: url({% static 'img/wood.jpg' %}); background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <br>
+      <!--One of three columns-->
+    </div>
+
+   </div><!--end upload row-->
+   </div>   <!--end container-->
+{% endblock %}
